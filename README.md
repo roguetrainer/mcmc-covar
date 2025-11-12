@@ -12,7 +12,6 @@ This directory contains two complete implementations of CoVaR (Conditional Value
 
 This quantifies the institution's contribution to systemic risk.
 
-![MCMC](./covar_mcmc_results.png)
 
 ## Implementations
 
@@ -32,6 +31,8 @@ python covar_mcmc_estimation.py
 - `covar_mcmc_results.png` - 6-panel visualization
 - `covar_results.csv` - Numerical results with credible intervals
 
+![MCMC](./covar_mcmc_results.png)
+
 ### 2. PyMC with NUTS (`covar_pymc_estimation.py`)
 - **Method**: Modern probabilistic programming
 - **Purpose**: Production-ready implementation
@@ -47,6 +48,8 @@ python covar_pymc_estimation.py
 **Outputs:**
 - `covar_pymc_results.png` - 12-panel visualization with diagnostics
 - `covar_pymc_results.csv` - Results with convergence metrics
+
+![MCMC](./covar_pymc_results.png)
 
 ## Key Results
 
