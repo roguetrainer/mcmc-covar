@@ -1,0 +1,37 @@
+# CoVaR MCMC Estimation - Python Requirements
+# ===============================================
+# This file specifies all dependencies needed to run both implementations
+# of CoVaR estimation (Gibbs Sampler and PyMC/NUTS)
+
+# Core Scientific Computing
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Progress bars (for Gibbs implementation)
+tqdm>=4.65.0
+
+# Bayesian Inference - PyMC Implementation
+pymc>=5.10.0
+arviz>=0.17.0
+
+# PyMC Dependencies (usually installed automatically, but specified for completeness)
+pytensor>=2.18.0
+aesara-theano-fallback>=0.1.0  # For backward compatibility
+
+# Optional but recommended
+jupyter>=1.0.0  # For interactive exploration
+ipython>=8.12.0  # Enhanced REPL
+
+# Development/Testing (optional)
+pytest>=7.3.0  # For running tests
+black>=23.3.0  # Code formatting
+flake8>=6.0.0  # Linting
+
+# Note: If you encounter issues with PyMC installation, try:
+# pip install pymc --no-cache-dir
+# or visit: https://www.pymc.io/projects/docs/en/stable/installation.html
