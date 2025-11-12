@@ -20,10 +20,11 @@ The chain is meticulously engineered so that after a sufficient "burn-in" period
 
 ### **The Bayesian Connection**
 
-MCMC is a cornerstone of **Bayesian Inference**. The goal of Bayesian modeling is to find the **posterior distribution**, $P(\\mathbf{w} \\mid \\text{Data})$. This requires calculating a normalizing constant (the marginal likelihood) in the denominator of Bayes' formula, which is usually an impossible integral:
+MCMC is a cornerstone of **Bayesian Inference**. The goal of Bayesian modeling is to find the **posterior distribution**, $P(\mathbf{w} \mid \text{Data})$. This requires calculating a normalizing constant (the marginal likelihood) in the denominator of Bayes' formula, which is usually an impossible integral:
 
-$$P(\\mathbf{w} \\mid \\text{Data}) \= \\frac{P(\\text{Data} \\mid \\mathbf{w}) P(\\mathbf{w})}{\\int P(\\text{Data} \\mid \\mathbf{w}) P(\\mathbf{w}) d\\mathbf{w}}$$  
-MCMC elegantly **bypasses this normalizing constant** by sampling directly from the proportional (unnormalized) target distribution, $P(\\text{Data} \\mid \\mathbf{w}) P(\\mathbf{w})$, making computation feasible.
+$$P(\mathbf{w} \mid \text{Data}) = \frac{P(\text{Data} \mid \mathbf{w}) P(\mathbf{w})}{\int P(\text{Data} \mid \mathbf{w}) P(\mathbf{w}) d\mathbf{w}}$$
+MCMC elegantly **bypasses this normalizing constant** by sampling directly from the proportional (unnormalized) target distribution, $P(\text{Data} \mid \mathbf{w}) P(\mathbf{w})$, making computation feasible.
+
 
 ## **Key Applications Across Disciplines**
 
@@ -55,7 +56,7 @@ Contagion in finance (cascading failure of institutions) is difficult to model b
 
 MCMC is the engine for the most rigorous forms of **Bayesian Neural Networks (BNNs)**.
 
-* **What is a BNN?** Unlike a standard neural network that finds a single optimal set of weights, a BNN treats all weights as **random variables**. MCMC is used to sample the full posterior distribution of these weights, $P(\\mathbf{w} \\mid \\text{Data})$.  
+* **What is a BNN?** Unlike a standard neural network that finds a single optimal set of weights, a BNN treats all weights as **random variables**. MCMC is used to sample the full posterior distribution of these weights, $P(\mathbf{w} \mid \text{Data})$.  
 * **Finance Utility:** Because the BNN generates a distribution of predictions for any input, it is highly valued for:  
   * **Uncertainty Quantification:** Providing credible intervals for stock price or macroeconomic forecasts.  
   * **Regulatory Compliance:** Offering robust, probabilistic risk figures for credit models, exceeding the capabilities of deterministic machine learning models.
