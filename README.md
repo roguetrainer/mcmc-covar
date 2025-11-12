@@ -2,6 +2,8 @@
 
 This directory contains two complete implementations of CoVaR (Conditional Value-at-Risk) estimation using different MCMC approaches.
 
+![MCMC](./MCMC.png)
+
 ## What is CoVaR?
 
 **CoVaR** measures how much the financial system's risk increases when a specific institution is in distress. It's a key metric for identifying systemically important financial institutions ("too big to fail").
@@ -9,6 +11,8 @@ This directory contains two complete implementations of CoVaR (Conditional Value
 **ΔCoVaR** = CoVaR - VaR_system
 
 This quantifies the institution's contribution to systemic risk.
+
+![MCMC](./covar_mcmc_results.png)
 
 ## Implementations
 
